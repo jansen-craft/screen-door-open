@@ -14,22 +14,3 @@ All content lives in `src/data/trip.ts`. Edit that one file directly in GitHub, 
 The data file includes a copy-ready match example. A tied match can award split points such as `0.5` and `0.5`.
 
 To preview a fully populated scorecard before the draft, change `showExampleResults` to `true` in `src/data/trip.ts`. It displays fictional teams and results only; set it back to `false` before the trip.
-
-## Run locally
-
-Requires Node.js 22 or newer.
-
-```bash
-npm ci
-npm run dev
-```
-
-Use `npm test` for scoring-calculation tests and `npm run build` to create the production site in `dist/`.
-
-## Publish on GitHub Pages
-
-1. Push this repository to GitHub and make `main` the default branch.
-2. In the repository’s **Settings → Pages**, select **GitHub Actions** as the build source.
-3. Push to `main`. The included workflow builds and deploys the site.
-
-The workflow deploys it at the normal project-site path, such as `https://your-account.github.io/screen-door-open/`. If this will be the root personal site (`your-account.github.io`), change the workflow’s `VITE_BASE_PATH` value to `/`.
